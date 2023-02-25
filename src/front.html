@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+    background: linear-gradient(to right, #33ccff 0%, #99ffcc 100%);
+    }
+
+    h1{
+        text-align: center;
+        font-size: 5rem;
+    }
+
+
+    .wrapper{
+            position: absolute;
+            width: fit-content;
+            height: 5rem;
+            background-color: #e84949;
+            z-index: 1;
+            border-radius: 2px;
+            color: white;
+            padding: 0.8rem 2.3rem;
+            position: relative;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.5s;
+
+        }
+
+        .wrapper::before{
+
+            background-color: black;
+            content: "";
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            position: absolute;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: all 0.8s;
+        }
+
+        .wrapper:hover::before{
+            transform: scaleX(1);
+        }
+
+        .wrapper:hover{
+            color: #fff;
+
+        }
+
+        .main{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10%;
+            gap: 2em;
+            
+        }
+
+        .bt{
+            width: 200px;
+        }
+        h2{
+           text-align: center;
+           color:dimgray;
+           margin-top: 3em;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Placement Management service</h1>
+
+    <div class="main">
+        <a href="company_login.html">
+            <button class="wrapper bt">  Company </button>
+        </a>
+
+        <a href="login.html">
+            <button class="wrapper bt" > student </button>
+
+        </a>
+    </div>
+
+    <h2>Get Your Placement Related Data at Single Place</h2>
+
+    
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <title>Signup Form </title>
+    <style>
+        body{
+            background: linear-gradient(to right, #33ccff 0%, #99ffcc 100%);
+        }
+        .container{
+            width: 300px;
+            background: #fff;
+            color: black;
+            margin: 140px auto;
+            border-radius: 6px;
+            padding: 10px 30px;
+            margin-bottom: 0;
+        }
+        h1{
+            text-align: center;
+        }
+        input{
+            display: block;
+            width: 90%;
+            padding: 10px;
+            font-size: 14px;
+            outline: none;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #99ffcc ;
+        }
+        button{
+            width: 98%;
+            border: none;
+            outline: none;
+            height: 40px;
+            border-radius: 5px;
+            background: linear-gradient(to right, #33ccff 0%, #99ffcc 100%);
+            cursor: pointer;
+            color: #fff;
+            font-size: 17px;
+        }
+        p{
+            text-align: center;
+        }
+        p a{
+            color: linear-gradient(to right, #33ccff 0%, #99ffcc 100%);;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sign Up</h1>
+        <form action="/student" method="post">
+            <input type="text" placeholder="Full Name" name="name" required>
+            <input type="text" placeholder="Username" name="uname" required>
+            <input type="email" placeholder="Email Address" name="email" required>
+            <input type="password" placeholder="Password" name="psw" required>
+            <input type="password" placeholder="Confirm Password" name="cpsw" required>
+            <button>Signup</button>
+        </form>
+        <p>
+           Already User? <a href="login.html">Login here!</a>
+        </p>
+    </div>
+</body>
+</html>
